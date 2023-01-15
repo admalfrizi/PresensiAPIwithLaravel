@@ -8,6 +8,7 @@ use App\Models\Presensi;
 use Auth;
 use Carbon\Carbon;
 use App\Helpers\ResponseFormatter;
+use stdClass;
 date_default_timezone_set("Asia/Jakarta");
 
 
