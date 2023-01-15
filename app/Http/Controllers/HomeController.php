@@ -34,7 +34,7 @@ class HomeController extends Controller
             $datetime = Carbon::parse($item->tanggal)->locale('id');
             $datetime->settings(['formatFunction' => 'translatedFormat']);
 
-            $item->tanggal = $datetime->format('1, j F Y');
+            $item->tanggal = $datetime->format('l, j F Y');
         }
         return view('home',[
             'data_presensi' => $data_presensi
